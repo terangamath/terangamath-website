@@ -1,0 +1,690 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "adhesions": "Membership",
+    "contact": "Contact",
+    "support": "Support us",
+    "mega": {
+      "about": {
+        "title": "About",
+        "who": "Who are we?",
+        "documents": "Official documents"
+      },
+      "actions": {
+        "title": "Our actions",
+        "vulgarisation": "Popularization",
+        "olympiades": "Olympiads"
+      },
+      "actualite": {
+        "title": "News",
+        "presse": "Press review",
+        "blog": "Blog",
+        "evenement": "Event"
+      },
+      "galerie": {
+        "title": "Gallery",
+        "voir": "View gallery"
+      },
+      "partenaires": {
+        "title": "Partners",
+        "devenir": "Become a partner",
+        "associations": "Associations",
+        "entreprises": "Companies",
+        "institutionnels": "Institutional actors",
+        "academiques": "Academic actors"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Revealing the scientific potential of Senegalese youth",
+      "subtitle": "TerangaMath is an association committed to promoting mathematics through academic excellence and scientific outreach.",
+      "cta_actions": "Discover our actions",
+      "cta_support": "Support us"
+    },
+    "pillars": {
+      "section_title": "Our two pillars",
+      "reduce": "Show less",
+      "see_full": "See the full programme",
+      "olympiades": {
+        "title": "Olympiads",
+        "desc": "Building mathematical excellence through training, intensive programs and international olympiads.",
+        "cta": "Learn more",
+        "expand_title": "Mathematics Olympiads",
+        "expand_text": "TerangaMath supports students in preparing for national and international olympiads, such as the Francophone Mathematics Olympiads (OFM) and the European Girls' Mathematical Olympiad (EGMO). This preparation is based on weekly training sessions and intensive programs, accessible to motivated students, in an inclusive approach. The goal is to put Senegal on the international stage, while sparking the interest and curiosity of young people for mathematics and scientific careers.",
+        "h1": "OFM — Francophone Mathematics Olympiads",
+        "h2": "EGMO — European Girls' Mathematical Olympiad",
+        "h3": "Weekly training sessions & intensive programs"
+      },
+      "vulgarisation": {
+        "title": "Outreach",
+        "desc": "Making mathematics concrete, interactive and accessible through exhibitions and fun workshops.",
+        "cta": "Discover",
+        "expand_title": "Scientific outreach",
+        "expand_text": "TerangaMath develops activities aimed at making mathematics more accessible and understandable, through workshops, exhibitions and educational actions adapted to students and the general public. These actions aim to fight self-censorship, by giving young people the tools and confidence needed to engage in scientific disciplines. Ultimately, the goal is to establish an active TerangaMath cell in each region of Senegal, to durably bring mathematics closer to students.",
+        "h1": "Workshops & interactive exhibitions",
+        "h2": "Fighting scientific self-censorship",
+        "h3": "Goal: a TerangaMath cell in every region"
+      }
+    },
+    "stats": {
+      "s1_value": "+500",
+      "s1_label": "students reached",
+      "s2_value": "10+",
+      "s2_label": "partner high schools",
+      "s3_value": "4",
+      "s3_label": "major exhibitions organized",
+      "s4_value": "1",
+      "s4_label": "national olympiad program",
+      "cta_actions": "Discover our actions",
+      "cta_don": "Make a donation"
+    },
+    "inclusion": {
+      "tag": "Gender inclusion",
+      "title": "Inclusion and gender equality",
+      "badge": "Equal opportunities",
+      "pill1": "Girls & young women",
+      "pill2": "Suburbs",
+      "pill3": "Rural areas",
+      "text": "This initiative is designed both as a concrete educational opportunity and as a strong lever to promote inclusion. TerangaMath pays particular attention to the participation of girls, as well as students from the suburbs and rural areas, in order to",
+      "text_strong": "reduce inequalities in access",
+      "text_end": ", deconstruct stereotypes and foster greater diversity in scientific careers.",
+      "card1": "Equal access",
+      "card2": "Diversity",
+      "card3": "Deconstructing stereotypes",
+      "cta": "Learn more",
+      "quote": "Reducing inequalities in access, deconstructing stereotypes and fostering greater diversity in scientific careers."
+    },
+    "testimonials": {
+      "tag": "Testimonials",
+      "title": "What they say about us",
+      "t1": "TerangaMath completely changed the way I see math! The workshops are interactive and fun, and I love how they connect math to everyday life. I feel more confident and have even started preparing for competitions.",
+      "t2": "I have seen a remarkable change in my student since joining TerangaMath. The welcoming approach and hands-on activities sparked a love of math I didn't think was possible at this level.",
+      "t3": "TerangaMath offers an incredible platform for students to explore math beyond the classroom. Their innovative methods and community approach inspire not only students, but also educators like me. It's a real paradigm shift."
+    },
+    "blog": {
+      "tag": "Latest news",
+      "title": "Our latest articles",
+      "see_all": "View all articles",
+      "read_more": "Read more",
+      "tag_event": "Event",
+      "tag_actuality": "News",
+      "tag_olympiades": "Olympiads",
+      "article1_title": "Science Exhibition 2025: Understanding to Love Science",
+      "article1_excerpt": "TerangaMath continues its commitment to promoting science with a new edition of its Science Exhibition.",
+      "article2_title": "OFM 2025: Senegal wins four bronze medals",
+      "article2_excerpt": "An exceptional performance, achieved just one year after the country's first participation in 2024.",
+      "article3_title": "Olympiad Preparation: Supporting Excellence",
+      "article3_excerpt": "TerangaMath sets up a structured Olympiad preparation program each year for motivated students."
+    },
+    "partners": {
+      "title": "Our partners",
+      "sections": {
+        "associations": "Associations",
+        "entreprises": "Companies",
+        "institutionnels": "Institutional Partners",
+        "academiques": "Academic Partners"
+      }
+    }
+  },
+
+  "about": {
+    "hero": {
+      "tag": "TerangaMath",
+      "title": "The story behind TerangaMath",
+      "subtitle": "Born from the fusion of Senegalese hospitality and a passion for mathematics, TerangaMath is reinventing the way we perceive and experience math."
+    },
+    "about_section": {
+      "tagline1": "Learn",
+      "tagline2": "Grow",
+      "tagline3": "Thrive",
+      "title": "About TerangaMath",
+      "p1": "Welcome to TerangaMath, an initiative born from the fusion of Senegalese hospitality and a passion for mathematics. Rooted in the core principle of \"Teranga\" — a Wolof word symbolizing Senegalese hospitality — our association aims to redefine the way mathematics is perceived and experienced.",
+      "p2": "At TerangaMath, we firmly believe that mathematics is not limited to classrooms. It is an integral part of our daily lives, the nature around us, and every decision we make.",
+      "p3": "Our approach relies on hands-on activities, interactive workshops, extracurricular clubs, conferences and open discussions — allowing all audiences to discover the fascinating world of mathematics. The association also plays a crucial role in identifying the best talents across Senegal, from middle school and high school, preparing them for international competitions.",
+      "cta_join": "Join us",
+      "cta_team": "Our team",
+      "mission_label": "Our mission",
+      "mission_text": "Transform the way people engage with mathematics. We believe that math is an integral part of our daily lives, the natural world, and the decisions we make. We seek to make it accessible, intuitive and enjoyable for everyone.",
+      "approach_label": "Our approach",
+      "approach_text": "We focus on hands-on learning experiences that inspire curiosity. Our interactive activities are aimed at all ages and levels, in the spirit of Teranga — a welcoming and inclusive atmosphere where every question is valued."
+    },
+    "offerings": {
+      "tag": "What we offer",
+      "title": "By joining TerangaMath…",
+      "subtitle": "You join a vibrant community that celebrates the beauty and relevance of mathematics in everyday life.",
+      "o1_title": "Interactive workshops",
+      "o1_desc": "Hands-on activities and interactive workshops that make learning math fun and concrete.",
+      "o2_title": "Extracurricular clubs",
+      "o2_desc": "Clubs offering students additional opportunities to explore mathematics outside the classroom.",
+      "o3_title": "Inspiring conferences",
+      "o3_desc": "Conferences bringing together math enthusiasts to share ideas, discoveries and innovations.",
+      "o4_title": "Open discussions",
+      "o4_desc": "A welcoming space where every question is welcome and concepts are freely explored."
+    },
+    "team": {
+      "tag": "The people behind the project",
+      "title": "Our team",
+      "m1": {
+        "name": "Dr. Coumba SARR",
+        "role": "President & Co-founder",
+        "sub": "DevOps Engineer · Luxembourg",
+        "bio": "Bachelor's degree in Mathematics from the University of Rouen, Master's in Algebraic Geometry and Number Theory from Pierre & Marie Curie, PhD in Mathematics from the University of Caen Normandie. Currently a DevOps Engineer in Luxembourg."
+      },
+      "m2": {
+        "name": "Khady SANKHE",
+        "role": "Secretary General",
+        "sub": "DevOps/Cloud Engineer · Atos",
+        "bio": "Holds an Expert Diploma in Computer Engineering. DevOps/Cloud Engineer at Atos. Joined TerangaMath in 2025 and works on the outreach side of the association."
+      },
+      "m3": {
+        "name": "Bintou DIOP SOW",
+        "role": "Deputy Secretary General",
+        "sub": "Agronomic Engineer · UniLaSalle",
+        "bio": "Agronomic engineer from the UniLaSalle polytechnic school, specializing in regulatory affairs for biological plant protection product registration dossiers. Joined TerangaMath in 2025 to help share the love of science with young people."
+      },
+      "m4": {
+        "name": "Abdoulahy COUNDOUL",
+        "role": "Treasurer",
+        "sub": "Actuary · Crédit Agricole · Dublin",
+        "bio": "Actuary with a degree from the Institut de Statistique des Universités de Paris (ISUP). Leads a reserving team at Crédit Agricole Assurances in Dublin."
+      },
+      "m5": {
+        "name": "El Hadji Demba SOW",
+        "role": "Board member",
+        "sub": "Data Engineer · Groupe BPCE",
+        "bio": "Data Engineer with a degree from the Conservatoire National des Arts et Métiers. Data consultant in the banking refinancing sector within the BPCE Group."
+      }
+    },
+    "cta": {
+      "tag": "Join the adventure",
+      "title": "Building a better world,\ntogether through math",
+      "subtitle": "Whether you are a student, teacher, parent or enthusiast — there is a place for you in our community. Together, let's transform the way we live and appreciate mathematics.",
+      "contact": "Contact us",
+      "donate": "Make a donation"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tag": "TerangaMath",
+      "title": "Contact us",
+      "subtitle": "A question, an idea, a partnership? We'll be happy to get back to you."
+    },
+    "info": {
+      "address_label": "Address",
+      "address": "11 Mail du Côteau 78570 Chaneloup Les Vignes",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "follow": "Follow us",
+      "map_label": "78570 Chaneloup Les Vignes"
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "We'll get back to you as soon as possible.",
+      "name_label": "Full name",
+      "name_placeholder": "Your name",
+      "email_label": "Email address",
+      "email_placeholder": "your@email.com",
+      "subject_label": "Subject",
+      "subject_placeholder": "Choose a subject…",
+      "subject_partnership": "Partnership",
+      "subject_volunteer": "Volunteering",
+      "subject_donation": "Donation & support",
+      "subject_press": "Press & media",
+      "subject_general": "General question",
+      "subject_other": "Other",
+      "message_label": "Message",
+      "message_placeholder": "Write your message here…",
+      "privacy": "By submitting this form, you agree to our",
+      "privacy_link": "privacy policy",
+      "submit": "Send",
+      "success_title": "Message sent!",
+      "success_text": "Thank you for reaching out. We'll get back to you very soon.",
+      "success_again": "Send another message"
+    },
+    "donation": {
+      "title": "Support TerangaMath",
+      "subtitle": "Every donation contributes to scientific excellence.",
+      "cta": "Make a donation"
+    }
+  },
+  "programs": {
+    "hero": {
+      "tag": "TerangaMath",
+      "title": "Our programs",
+      "subtitle": "From olympiad preparation to after-school clubs, discover how TerangaMath opens the doors of mathematical excellence to everyone."
+    },
+    "cta_join": "Join us",
+    "items": {
+      "olympiades": {
+        "tag": "Excellence",
+        "title": "Olympiad Preparation",
+        "desc": "We prepare high school students for international mathematics competitions. We had the honor of preparing two teams — junior and senior — for the 2024 Francophone Mathematics Olympiads (OFM). We proudly marked Senegal's first participation in a major extra-African mathematics competition.",
+        "highlight": "Senegal's first participation in extra-African OFM"
+      },
+      "clubs": {
+        "tag": "Accessibility",
+        "title": "After-school Clubs",
+        "desc": "TerangaMath's outreach program is dedicated to making mathematics accessible to all, especially young people. Through after-school activities in science clubs, competitions like the Tournament of Young Senegalese Mathematicians, and interactive exhibitions, we stimulate mathematical curiosity.",
+        "highlight": "Tournament of Young Senegalese Mathematicians"
+      },
+      "videos": {
+        "tag": "Digital",
+        "title": "Videos & Webinars",
+        "desc": "Our educational videos and webinars allow people to discover mathematics from a practical and captivating angle, fostering exchanges between researchers and students. An accessible format to learn at your own pace, wherever you are.",
+        "highlight": "Direct exchanges between researchers and students"
+      },
+      "alkindi": {
+        "tag": "Competition",
+        "title": "Alkindi Competition",
+        "desc": "The Alkindi competition is a cryptography and discrete mathematics program for middle and high school students. It allows young people to develop advanced analytical skills in a fun and stimulating environment, while introducing them to the major themes of modern mathematics.",
+        "highlight": "Cryptography & discrete mathematics for young people"
+      }
+    },
+    "stats": {
+      "s1_value": "+500",
+      "s1_label": "students reached",
+      "s2_value": "10+",
+      "s2_label": "partner high schools",
+      "s3_value": "4",
+      "s3_label": "major exhibitions",
+      "s4_value": "2",
+      "s4_label": "OFM teams"
+    },
+    "testimonials": {
+      "tag": "Testimonials",
+      "title": "What they say about us",
+      "items": [
+        {
+          "quote": "TerangaMath completely changed the way I see math! The workshops are interactive and fun, and I love how they connect math to everyday life. I feel more confident and have even started preparing for competitions.",
+          "name": "Participating student",
+          "role": "High school student, Dakar",
+          "initials": "EP"
+        },
+        {
+          "quote": "I have seen a remarkable change in my child since joining TerangaMath. The welcoming approach and hands-on activities sparked a love of math I didn't think was possible. It's incredible to see my child excited about learning.",
+          "name": "Parent",
+          "role": "Mother, Dakar",
+          "initials": "PA"
+        },
+        {
+          "quote": "TerangaMath offers an incredible platform for students to explore math beyond the classroom. Their innovative methods and community approach inspire not only students, but also educators like me. It's a real paradigm shift.",
+          "name": "Teacher",
+          "role": "Mathematics teacher",
+          "initials": "EN"
+        }
+      ]
+    },
+    "cta_band": {
+      "tag": "Join the adventure",
+      "title": "Let's build a better world through mathematics",
+      "subtitle": "Whether you're a student, teacher, parent or enthusiast — there's a place for you in our community. Together, let's transform the way we live and appreciate mathematics.",
+      "contact": "Contact us",
+      "donation": "Make a donation"
+    }
+  },
+  "footer": {
+    "tagline": "Together, let's open the doors of scientific excellence.",
+    "partner": "Become a partner",
+    "donation": "Make a donation",
+    "contact": "Contact us",
+    "rights": "All rights reserved"
+  },
+  "events": {
+    "hero": {
+      "tag": "TerangaMath Agenda",
+      "title": "Our Events",
+      "subtitle": "Conferences, olympiads, workshops… Join the TerangaMath community."
+    },
+    "tab": {
+      "all": "All",
+      "upcoming": "Upcoming",
+      "past": "Past"
+    },
+    "filter": {
+      "all": "All",
+      "conference": "Conferences",
+      "atelier": "Workshops",
+      "olympiades": "Olympiads",
+      "vulgarisation": "Outreach"
+    },
+    "cta": {
+      "join": "Join event",
+      "details": "Learn more"
+    },
+    "featured_label": "Featured event",
+    "no_events": "No events in this category.",
+    "status": {
+      "past": "Past"
+    },
+    "newsletter": {
+      "title": "Never miss an event",
+      "subtitle": "Receive our news and invitations directly in your inbox.",
+      "placeholder": "Your email address",
+      "cta": "Subscribe",
+      "success": "Thank you! You're subscribed 🎉"
+    },
+    "e1": {
+      "title": "Artificial Intelligence & Big Data",
+      "desc": "An interactive conference on modern applications of AI and Big Data in mathematical sciences."
+    },
+    "e2": {
+      "title": "Expert Insights: Applied Mathematics",
+      "desc": "Experts share their vision of applied mathematics in the fields of finance, physics and engineering."
+    },
+    "e3": {
+      "title": "Mathematics Afternoon",
+      "desc": "An afternoon dedicated to exploring elegant mathematical problems, open to all levels."
+    },
+    "e4": {
+      "title": "TerangaMath Regional Olympiads 2025",
+      "desc": "The annual mathematics competition open to high school students from across the region. Registration required."
+    },
+    "e5": {
+      "title": "Outreach Evening — Mathematics & Society",
+      "desc": "Join us for an outreach evening: how mathematics shapes the world around us."
+    }
+  },
+  "actions": {
+    "hero": {
+      "tag": "TerangaMath",
+      "title": "Our Actions",
+      "subtitle": "Excellence and accessibility: two complementary pillars to reveal talents and change the way mathematics is perceived."
+    },
+    "intro": {
+      "excellence_label": "Excellence",
+      "excellence_title": "Olympiads",
+      "excellence_text": "We support motivated and talented students in their discovery and preparation for mathematics olympiads, working alongside partner high schools and dedicated teachers.",
+      "accessibility_label": "Accessibility",
+      "accessibility_title": "Outreach",
+      "accessibility_text": "We strive to make mathematics accessible, concrete and alive. Through events, workshops and exhibitions, we show that mathematics is not abstract or reserved for an elite.",
+      "quote": "Our ambition is twofold: <strong>reveal talent</strong> and <strong>transform how people see</strong> mathematics."
+    },
+    "tabs": {
+      "olympiades": "Olympiads",
+      "vulgarisation": "Outreach",
+      "projets": "Projects"
+    },
+    "olympiades": {
+      "tag": "Programme",
+      "title": "Mathematics Olympiads",
+      "description": "The TerangaMath Olympiad programme supports motivated and talented students in discovering and preparing for mathematics olympiads.",
+      "preparation": {
+        "title": "Olympiad Preparation",
+        "text": "Throughout the year, students benefit from regular training sessions led by committed mathematics teachers who are trained in olympiad preparation.",
+        "bullet1": "Regular training sessions throughout the year",
+        "bullet2": "Coaching by teachers trained in olympiad pedagogy",
+        "bullet3": "Progressive approach based on rigour and reasoning",
+        "bullet4": "A foundation for lasting skill development"
+      },
+      "stages": {
+        "title": "Intensive Camps",
+        "text": "Intensive camps are organised to deepen the knowledge of the most advanced students.",
+        "bullet1": "National and international trainers",
+        "bullet2": "Full immersion in the olympiad world",
+        "bullet3": "Cross-cultural pedagogical exchanges",
+        "bullet4": "Preparation for competitions beyond Africa"
+      },
+      "formation": {
+        "title": "Trainer Development",
+        "text": "TerangaMath participates in and contributes to trainer development programmes, in collaboration with organisations and partners in other countries.",
+        "bullet1": "Collaboration with international partners",
+        "bullet2": "Experience sharing and method alignment",
+        "bullet3": "Lasting capacity building for educators",
+        "bullet4": "Key lever for programme quality"
+      },
+      "stats": {
+        "s1_value": "+500",
+        "s1_label": "students reached",
+        "s2_value": "10+",
+        "s2_label": "partner high schools",
+        "s3_value": "2",
+        "s3_label": "teams at OFM 2024",
+        "s4_value": "4 🥉",
+        "s4_label": "medals at OFM 2025"
+      }
+    },
+    "vulgarisation": {
+      "tag": "Programme",
+      "title": "Science Outreach",
+      "description": "TerangaMath works to make mathematics accessible, concrete and alive.",
+      "events": {
+        "title": "Science Events",
+        "text": "TerangaMath organises events open to students, teachers and the general public to promote mathematical culture."
+      },
+      "expo": {
+        "title": "Interactive Science Exhibitions",
+        "text": "We design interactive exhibitions that highlight mathematics in its historical, cultural and contemporary dimensions.",
+        "bullet1": "Maths game stands",
+        "bullet2": "Hands-on manipulations",
+        "bullet3": "Logic and collaborative challenges",
+        "bullet4": "Visual and interactive demonstrations"
+      },
+      "immersion": {
+        "title": "Science Camp — Mathematics Immersion Week",
+        "text": "For one week, students are brought together in a space dedicated to experimentation and discovery.",
+        "bullet1": "Interactive activities",
+        "bullet2": "Hands-on manipulations",
+        "bullet3": "Collaborative challenges",
+        "bullet4": "Exploring mathematical concepts through practice"
+      },
+      "videos": {
+        "title": "Videos & Webinars",
+        "text": "TerangaMath develops digital content to broaden access to scientific resources."
+      },
+      "mallette": {
+        "title": "Mobile Maths Kit",
+        "text": "TerangaMath offers a portable mini-exhibition that travels to schools across the country."
+      },
+      "objective_title": "Our Goal",
+      "objective_text": "Spark curiosity, build students' confidence and promote an <strong>open and inclusive scientific culture</strong> — with the ambition of establishing an active TerangaMath chapter in every region of Senegal."
+    },
+    "cta": {
+      "tag": "Join the adventure",
+      "title": "Let's build a better world, together through maths",
+      "subtitle": "Whether you're a student, teacher, parent or enthusiast — there's a place for you in our community.",
+      "contact": "Contact us",
+      "donate": "Make a donation"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "eyebrow": "Our community in pictures",
+      "title": "Gallery",
+      "subtitle": "Moments of solidarity, hope and impact across Senegal.",
+      "stats": {
+        "photos": {
+          "value": "120+",
+          "label": "Photos"
+        },
+        "events": {
+          "value": "48",
+          "label": "Events"
+        },
+        "years": {
+          "value": "3 years",
+          "label": "Of impact"
+        }
+      }
+    },
+    "filters": {
+      "all": "View all",
+      "evenement": "Events",
+      "equipe": "Team",
+      "terrain": "In the field",
+      "success": "Success stories"
+    },
+    "loadMore": "Load more",
+    "remaining": "remaining",
+    "empty": "No photos in this category.",
+    "close": "Close"
+  },
+  
+  "blog": {
+    "hero": {
+      "tag": "TerangaMath News",
+      "title": "Our Blog",
+      "subtitle": "News, results, reflections — follow TerangaMath's mathematical adventures."
+    },
+    "cat": {
+      "all": "All articles",
+      "olympiades": "Olympiads",
+      "vulgarisation": "Outreach"
+    },
+    "featured": "Featured",
+    "read_more": "Read article",
+    "read_time": "min read",
+    "articles_count": "articles",
+    "other_articles": "More articles",
+    "no_articles": "No articles in this category.",
+    "back": "Back to blog",
+    "share": "Share:",
+    "related": "Related articles",
+    "newsletter": {
+      "title": "Stay informed",
+      "subtitle": "Receive our news directly in your inbox.",
+      "placeholder": "Your email address",
+      "cta": "Subscribe",
+      "success": "Thank you! You're subscribed 🎉"
+    },
+    "cta": {
+      "title": "Support TerangaMath",
+      "subtitle": "Every donation contributes to scientific excellence.",
+      "cta": "Make a donation"
+    },
+
+    "p1": {
+      "title": "Senegal wins four medals at the 2025 Francophone Mathematics Olympiads",
+      "excerpt": "Senegal stood out at the 6th edition of OFM 2025, winning four bronze medals and an honorable mention — the result of months of rigorous preparation by TerangaMath.",
+      "intro": "Senegal stood out at the 6th edition of the 2025 Francophone Mathematics Olympiads (OFM) by winning four bronze medals and an honorable mention. An encouraging performance that reflects the dynamism of Senegalese youth in high-level mathematics and the efforts made to structure preparation for international competitions.",
+      "s1": "This achievement is the result of months of preparation led by TerangaMath. Throughout the year, weekly training camps allowed many math-passionate high school students to discover olympiad-style reasoning and problem types.",
+      "s2": "As the competition approached, this preparation intensified through an intensive camp organized in Diourbel and then Dakar, bringing together the students selected to represent Senegal. Over several days, participants worked on the major olympiad disciplines — geometry, arithmetic, combinatorics, and algebra — through in-depth training sessions and a mock competition under realistic conditions.",
+      "s3": "The camp was led with the support of Maëna Quémenér, who traveled specially to coach the students, as well as Mahmoud, a coach from Djibouti whose olympiad experience proved invaluable to the participants.",
+      "s4": "TerangaMath also extends its gratitude to Force-N and Animath for their support, particularly in mobilizing the resources that made this preparation possible.",
+      "s5": "Beyond the medals, this participation marks an important milestone in building olympiad mathematics in Senegal and reinforces TerangaMath's ambition: to reveal and nurture the mathematical talents of Senegalese youth.",
+      "img_caption": "The laureates who represented Senegal at OFM 2025"
+    },
+
+    "p2": {
+      "title": "Understanding to Love: mathematics meets the general public",
+      "excerpt": "From May 8 to 10, 2025, the Museum of Black Civilizations in Dakar hosted the science exhibition 'Understanding to Love', drawing over 2,000 visitors to discover mathematics in a new light.",
+      "intro": "From May 8 to 10, 2025, the Museum of Black Civilizations in Dakar hosted the science exhibition 'Understanding to Love' (Comprendre pour aimer), an event dedicated to making mathematics accessible to the general public. For three days, students, teachers, researchers and curious visitors gathered to experience mathematics differently: alive, accessible, and deeply connected to everyday life.",
+      "s1": "The exhibition was organized by a collective of actors committed to promoting science in Senegal, including TerangaMath, FORCE-N, AIMS Senegal, SWMA (Senegalese Women in Mathematics Association), and the National Academy of Sciences and Technology of Senegal (ANSTS). This collaboration between associations, scientific institutions and academic partners resulted in a rich program combining interactive installations, math games, conferences, round tables and educational activities.",
+      "s2": "A large part of the installations presented at the exhibition were produced by TerangaMath in collaboration with high school students, whom the association mentored throughout the preparation of the event. This approach aimed to place young people at the heart of science communication, enabling them to become active participants in the dissemination of mathematics.",
+      "s3": "Among the highlights were the harmonograph — a machine that traces beautiful geometric figures through pendulum movements — and self-supporting geometric sculptures, which spectacularly illustrated the principles of balance and structure in mathematics.",
+      "s4": "Students from the Lycée Scientifique d'Excellence de Diourbel and the Lycée Seydina Limamoulaye de Guédiawaye also served as science mediators for visitors, explaining the mathematical concepts behind the installations.",
+      "s5": "The opening ceremony was held in the presence of Professor Mary Teuw Niane, representing the President of the Republic. His participation gave the event a strong institutional dimension and underscored the strategic importance of mathematics and science for the development of Senegal.",
+      "s6": "With over 2,000 visitors — the majority of them young people — this first edition was a resounding success and confirms the growing interest in science outreach initiatives in Senegal.",
+      "img_caption": "The 'Understanding to Love' exhibition at the Museum of Black Civilizations in Dakar"
+    },
+
+    "p3": {
+      "title": "A TerangaMath coach on an immersion at Valbonne",
+      "excerpt": "Cheikh Tidiane Diagne, a mathematics teacher, took part in an observation program organized by Animath at the Centre International de Valbonne from August 14 to 25, 2025.",
+      "intro": "As part of its efforts to strengthen the training of olympiad math coaches, TerangaMath sent Cheikh Tidiane Diagne, a mathematics teacher at Lycée Seydina Limamoulaye de Guédiawaye, to take part in an observation program organized by Animath at the Centre International de Valbonne (CIV) in France.",
+      "s1": "The program, which ran from August 14 to 25, 2025, allowed our coach to closely observe the organization and teaching methods used in math camps designed for high-potential students. Over twelve days, he observed a wide range of activities: problem-solving sessions, scientific talks, pedagogical meetings, and informal exchanges between coaches and students.",
+      "s2": "This immersion also offered a deeper understanding of Animath's educational philosophy, which is grounded in independent research, collaborative work, and diverse approaches to problem-solving.",
+      "s3": "Within TerangaMath, Cheikh Tidiane Diagne is actively involved in coaching students enrolled in olympiad training programs. The insights and best practices observed during this stay will directly contribute to raising the quality of preparation for Senegalese students in international competitions.",
+      "s4": "TerangaMath warmly thanks Animath and all the coaches and organizers of the program for their warm welcome and for the opportunity to discover their training methods and their commitment to promoting mathematics."
+    },
+
+    "p4": {
+      "title": "TerangaMath organizes a summer math camp at AIMS Senegal",
+      "excerpt": "From September 22 to 28, 2025, TerangaMath and AIMS Senegal co-organized a math olympiad preparation camp in Mbour, bringing together 20 students to explore graph theory, combinatorics and arithmetic.",
+      "intro": "As part of its efforts to prepare students for mathematics competitions, TerangaMath organized, in partnership with AIMS Senegal (African Institute for Mathematical Sciences), a summer olympiad preparation camp. The camp took place from September 22 to 28, 2025 at the AIMS Senegal campus in Mbour.",
+      "s1": "A total of 20 students took part in this week-long program. True to TerangaMath's spirit, the camp was open to students of different levels, with a deliberately inclusive and non-elitist approach, giving everyone the opportunity to develop their curiosity and mathematical skills.",
+      "s2": "During the week, participants followed an intensive program combining advanced coursework, problem-solving exercises and research projects, with the aim of developing their logical reasoning, mathematical creativity and modeling skills. Topics covered included graph theory, combinatorics and arithmetic — all central disciplines in olympiad mathematics.",
+      "s3": "Students also worked in groups on an applied research project, illustrating how mathematics can be used to model and solve real-world problems — including questions on route optimization between different cities in Senegal.",
+      "s4": "The camp was supervised by Matar Diagne, a mathematics teacher at Lycée de Thiaroye, who guided the students throughout the week's pedagogical activities and group work.",
+      "s5": "TerangaMath warmly thanks Animath for its financial support, which was instrumental in making this camp possible.",
+      "s6": "Through this type of initiative, TerangaMath and AIMS Senegal pursue a shared goal: supporting young talent and strengthening Senegal's preparation for national and international mathematics olympiads."
+    },
+
+    "p5": {
+      "title": "TerangaMath at the Moroccan Tournament of Young Mathematicians (MTYM)",
+      "excerpt": "Mafal Ndiaye Diop attended the MTYM at Al Akhawayn University in Morocco — a team-based mathematical research competition — as an observer and jury member.",
+      "intro": "As part of its efforts to strengthen the training of its coaches, TerangaMath sent Mafal Ndiaye Diop to take part in an observation program organized by Maths & Maroc at Al Akhawayn University in Morocco. The visit took place from December 25 to 29, 2025 as part of the Moroccan Tournament of Young Mathematicians (MTYM).",
+      "s1": "The MTYM is an original scientific competition based on team mathematical research. Students work on open-ended problems that they must analyze, model, and present before a scientific jury.",
+      "s2": "One of the distinctive features of this format is the rotation of roles between teams, with functions of defender, opponent and reporter. This structure promotes critical thinking, the confrontation of ideas, and the quality of scientific argumentation among students.",
+      "s3": "During the immersion, Mafal Ndiaye Diop also participated in academic exchanges and evaluation sessions as a jury member, allowing her to closely observe assessment criteria and the methods used to support student-led scientific projects.",
+      "s4": "TerangaMath warmly thanks Maths & Maroc for their invitation and for the warm reception given to our coach. The association also thanks Animath for its unwavering support in developing training activities and cooperation around olympiad mathematics.",
+      "s5": "This experience is a source of inspiration for developing new pedagogical formats within TerangaMath, particularly to encourage learning mathematics through research and collaborative work."
+    }
+  },
+
+  "presse": {
+    "hero": {
+      "tag": "TerangaMath in the news",
+      "title": "Press review",
+      "subtitle": "TerangaMath's work has caught the attention of several media outlets and institutions. Here is a selection of articles, interviews and publications that highlight our initiatives to promote mathematical culture and excellence in Senegal."
+    },
+    "intro": "Browse the articles below to learn more about our activities and impact.",
+    "featured": "Featured",
+    "read_article": "Read article",
+    "articles_count": "articles",
+    "other_articles": "More articles",
+    "no_articles": "No articles in this category.",
+    "cat": {
+      "all": "All",
+      "media": "Media",
+      "institution": "Institutions",
+      "partner": "Partners"
+    },
+    "stats": {
+      "articles": "press articles",
+      "countries": "countries covered",
+      "period": "media coverage"
+    },
+    "contact": {
+      "title": "Press contact",
+      "subtitle": "Are you a journalist or institution and would like to know more about TerangaMath? Get in touch.",
+      "cta": "Contact us"
+    },
+    "items": {
+      "p1": {
+        "source": "RTS",
+        "title": "Senegal shines at the Francophone Mathematics Olympiads with four bronze medals",
+        "excerpt": "Senegal's national broadcaster RTS covers the exceptional performance of the Senegalese team at OFM 2025, praising TerangaMath's work in preparing these young talents.",
+        "date": "March 2025"
+      },
+      "p2": {
+        "source": "Journal du Sénégal",
+        "title": "Senegal shines at the Francophone Mathematics Olympiads: 4 medals and an honorable mention",
+        "excerpt": "Journal du Sénégal reports on the five laureates from the Lycée Scientifique d'Excellence de Diourbel who represented Senegal at OFM 2025 under the guidance of TerangaMath.",
+        "date": "March 2025"
+      },
+      "p3": {
+        "source": "European Mathematical Society",
+        "title": "Simon Norton Prize 2024 — EMS Outreach Committee",
+        "excerpt": "The European Mathematical Society recognizes TerangaMath through the 2024 Simon Norton Prize, honoring the excellence of its mathematics outreach work in Africa.",
+        "date": "2024"
+      },
+      "p4": {
+        "source": "Force-N",
+        "title": "Exhibition: Force-N and TerangaMath put mathematics in the spotlight at the Museum of Black Civilizations",
+        "excerpt": "Force-N covers the 'Understanding to Love' exhibition co-organized with TerangaMath at the Museum of Black Civilizations in Dakar, which drew over 2,000 visitors.",
+        "date": "May 2025"
+      },
+      "p5": {
+        "source": "Institute of Mathematics and its Applications",
+        "title": "Senegalese students build a harmonograph",
+        "excerpt": "The IMA highlights how Senegalese high school students mentored by TerangaMath built a harmonograph during the science exhibition in Dakar, drawing international attention.",
+        "date": "May 2025"
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Our Partners",
+      "subtitle": "We collaborate with associations, institutions and organizations sharing our vision of a scientifically awakened youth."
+    },
+    "cta": {
+      "tag": "Join the adventure",
+      "title": "Want to become a partner?",
+      "subtitle": "Join TerangaMath in its mission to promote mathematics in Senegal and Africa.",
+      "button": "Contact us"
+    }
+  }
+
+}
