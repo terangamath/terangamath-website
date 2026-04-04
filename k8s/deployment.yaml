@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: terangamath
+  namespace: terangamath-prod
   labels:
     app: terangamath
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: terangamath:latest   # Remplacer par ton registry, ex: ghcr.io/org/terangamath:v1.0.0
+          image: ghcr.io/diarrasokhna/terangamath-website:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

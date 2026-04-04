@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: terangamath
+  namespace: terangamath-prod
   annotations:
     # Nginx Ingress Controller
     nginx.ingress.kubernetes.io/rewrite-target: /
