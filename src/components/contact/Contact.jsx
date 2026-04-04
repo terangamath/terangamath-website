@@ -120,8 +120,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-body text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">{t('contact.info.phone_label')}</p>
-                      <a href="tel:+33760833230" className="font-body text-[15px] text-gray-700 hover:text-gray-900 transition-colors">
-                        +33 760 83 32 30
+                      <a href="tel:+33xxxxxxxxx" className="font-body text-[15px] text-gray-700 hover:text-gray-900 transition-colors">
+                        +33 xxx xx xx xx
                       </a>
                     </div>
                   </div>
