@@ -39,6 +39,3 @@ spec:
               port: 8080
             initialDelaySeconds: 3
             periodSeconds: 5
-      # Authentification GHCR pour image privée
-      imagePullSecrets:
-        - name: ghcr-pull-secret
