@@ -12,7 +12,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: diarrasokhna/terangamath-website
+  IMAGE_NAME: terangamath/terangamath-website
 
 jobs:
   # ─────────────────────────────────────────

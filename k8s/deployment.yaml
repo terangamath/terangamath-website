@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: app
-          image: terangamath:latest   # Remplacer par ton registry, ex: ghcr.io/org/terangamath:v1.0.0
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/terangamath/terangamath-website:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           resources:
@@ -39,4 +39,6 @@ spec:
               port: 8080
             initialDelaySeconds: 3
             periodSeconds: 5
-      # Pas de volume nécessaire : app 100% statique
+      # Authentification GHCR pour image privée
+      imagePullSecrets:
+        - name: ghcr-pull-secret
