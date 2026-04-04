@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/diarrasokhna/terangamath-website:latest
+          image: pivert/terangamath:0.0.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
