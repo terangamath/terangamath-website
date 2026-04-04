@@ -12,10 +12,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - terangamath.sn          # Remplacer par ton domaine
+        - www.terangamath.org
       secretName: terangamath-tls  # Secret créé automatiquement par cert-manager
   rules:
-    - host: terangamath.sn        # Remplacer par ton domaine
+    - host: www.terangamath.org
       http:
         paths:
           - path: /
