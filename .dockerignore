@@ -1,0 +1,31 @@
+# Dépendances (réinstallées dans le conteneur)
+node_modules/
+
+# Output de build (recréé dans le conteneur)
+dist/
+
+# Git
+.git/
+.gitignore
+
+# Fichiers Docker (inutiles dans le contexte de build)
+Dockerfile
+.dockerignore
+
+# Kubernetes
+k8s/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variables d'environnement locales
+.env
+.env.*
+!.env.example
+
+# Éditeurs / OS
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db

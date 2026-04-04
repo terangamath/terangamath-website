@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: terangamath
+  annotations:
+    # Nginx Ingress Controller
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    # TLS géré par cert-manager (Let's Encrypt) — supprimer si non utilisé
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - terangamath.sn          # Remplacer par ton domaine
+      secretName: terangamath-tls  # Secret créé automatiquement par cert-manager
+  rules:
+    - host: terangamath.sn        # Remplacer par ton domaine
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: terangamath
+                port:
+                  number: 80
