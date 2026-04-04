@@ -24,7 +24,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: app
-          image: pivert/terangamath:0.0.1
+          image: ghcr.io/terangamath/terangamath-website:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
