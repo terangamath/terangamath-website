@@ -4,16 +4,13 @@ metadata:
   name: terangamath
   namespace: terangamath-prod
   annotations:
-    # Nginx Ingress Controller
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    # TLS géré par cert-manager (Let's Encrypt) — supprimer si non utilisé
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    traefik.ingress.kubernetes.io/router.tls.certresolver: letsencrypt
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
         - www.terangamath.org
-      secretName: terangamath-tls  # Secret créé automatiquement par cert-manager
   rules:
     - host: www.terangamath.org
       http:
