@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - 'k8s/**'
+      - '.gitignore'
+  pull_request:
+    branches:
+      - main
 
 # Permissions nécessaires pour écrire sur GHCR avec le GITHUB_TOKEN
 permissions:
