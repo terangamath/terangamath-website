@@ -246,7 +246,10 @@
     "donation": {
       "title": "Support TerangaMath",
       "subtitle": "Every donation contributes to scientific excellence.",
-      "cta": "Make a donation"
+      "cta": "Make a donation",
+      "choose": "Choose a method",
+      "card": "Bank card",
+      "mobile": "Mobile Money"
     }
   },
   "programs": {
@@ -685,6 +688,12 @@
       "subtitle": "Join TerangaMath in its mission to promote mathematics in Senegal and Africa.",
       "button": "Contact us"
     }
+  },
+
+"donation": {
+    "choose": "Choose a method",
+    "card": "Bank card",
+    "mobile": "Mobile Money"
   }
 
 }
