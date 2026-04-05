@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
 
 # Permissions nécessaires pour écrire sur GHCR avec le GITHUB_TOKEN
 permissions:
@@ -12,7 +14,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: diarrasokhna/terangamath-website
+  IMAGE_NAME: terangamath/terangamath-website
 
 jobs:
   # ─────────────────────────────────────────
@@ -77,10 +79,14 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
+            # Tag semver sur push de tag Git (v1.0.0 -> 1.0.0)
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
             # Tag avec le SHA court du commit (ex: sha-a1b2c3d)
             type=sha,prefix=sha-,format=short
             # Tag latest sur chaque push sur main
-            type=raw,value=latest,enable=true
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
 
       # Build multi-stage + push (utilise le cache Docker pour accélérer les rebuilds)
       - name: Build et push de l'image
