@@ -248,7 +248,10 @@
     "donation": {
       "title": "Soutenez TerangaMath",
       "subtitle": "Chaque don contribue à l'excellence scientifique.",
-      "cta": "Faire un don"
+      "cta": "Faire un don",
+      "choose": "Choisir un moyen",
+      "card": "Carte bancaire",
+      "mobile": "Mobile Money"
     }
   },
   "programs": {
@@ -682,5 +685,10 @@
       "subtitle": "Rejoignez TerangaMath dans sa mission de promotion des mathématiques au Sénégal et en Afrique.",
       "button": "Nous contacter"
     }
+  },
+  "donation": {
+    "choose": "Choisir un moyen",
+    "card": "Carte bancaire",
+    "mobile": "Mobile Money"
   }
 }
