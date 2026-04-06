@@ -99,9 +99,8 @@
     "testimonials": {
       "tag": "Testimonials",
       "title": "What they say about us",
-      "t1": "TerangaMath completely changed the way I see math! The workshops are interactive and fun, and I love how they connect math to everyday life. I feel more confident and have even started preparing for competitions.",
-      "t2": "I have seen a remarkable change in my student since joining TerangaMath. The welcoming approach and hands-on activities sparked a love of math I didn't think was possible at this level.",
-      "t3": "TerangaMath offers an incredible platform for students to explore math beyond the classroom. Their innovative methods and community approach inspire not only students, but also educators like me. It's a real paradigm shift."
+      "role1":"1ère S1 — Lycée de Sédhiou · OFM 2025 Bronze Medalist",
+      "t1": "I had the opportunity to take part in a preparation camp led by two passionate students. This camp allowed me to strengthen my skills, refine my working methods and develop greater rigor. The personalized guidance and the stimulating atmosphere were key factors in my progress. At the end of this experience, I had the satisfaction of winning a bronze medal."
     },
     "blog": {
       "tag": "Latest news",
@@ -454,7 +453,11 @@
       "description": "TerangaMath works to make mathematics accessible, concrete and alive.",
       "events": {
         "title": "Science Events",
-        "text": "TerangaMath organises events open to students, teachers and the general public to promote mathematical culture."
+        "text": "TerangaMath organises events open to students, teachers and the general public to promote mathematical culture.",
+        "bullet1": "Conferences and round tables",
+        "bullet2": "Scientific open days",
+        "bullet3": "Meetings between students, teachers and researchers",
+        "bullet4": "Events open to the general public"
       },
       "expo": {
         "title": "Interactive Science Exhibitions",
@@ -474,7 +477,11 @@
       },
       "videos": {
         "title": "Videos & Webinars",
-        "text": "TerangaMath develops digital content to broaden access to scientific resources."
+        "text": "TerangaMath develops digital content to broaden access to scientific resources.",
+        "bullet1": "Educational videos on key concepts",
+        "bullet2": "Webinars with researchers and teachers",
+        "bullet3": "Content accessible remotely",
+        "bullet4": "Free and open resources for all"
       },
       "mallette": {
         "title": "Mobile Maths Kit",
@@ -489,7 +496,32 @@
       "subtitle": "Whether you're a student, teacher, parent or enthusiast — there's a place for you in our community.",
       "contact": "Contact us",
       "donate": "Make a donation"
-    }
+    },
+      "projets": {
+        "tag": "COMING SOON",
+        "title": "Upcoming Projects",
+        "description": "Initiatives in preparation to go even further in promoting mathematics and science.",
+        "badge": "Coming soon",
+        "immersion": {
+          "title": "Science Camp — Mathematics Immersion Week",
+          "text": "For one week, students will be brought together in a space dedicated to experimentation and mathematical discovery.",
+          "bullet1": "Interactive activities and hands-on manipulations",
+          "bullet2": "Collaborative challenges between students",
+          "bullet3": "Exploring mathematical concepts through practice",
+          "bullet4": "Supervision by experienced trainers"
+        },
+        "mallette": {
+          "title": "Mobile Maths Kit",
+          "text": "A portable mini-exhibition that will travel to schools across Senegal.",
+          "bullet1": "Portable and modular exhibition",
+          "bullet2": "Deployment in high schools and middle schools",
+          "bullet3": "Mathematical games and manipulations included",
+          "bullet4": "Goal: reach rural and peri-urban areas"
+        },
+        "cta_title": "Want to support these projects?",
+        "cta_text": "These projects are in the preparation phase. Your support — financial, logistical or human — can make a difference.",
+        "cta_button": "Contact us"
+      }
   },
   "gallery": {
     "hero": {

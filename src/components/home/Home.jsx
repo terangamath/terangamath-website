@@ -17,6 +17,7 @@ import ansts from '../../assets/partners/ANSTS.jpg';
 import caci from '../../assets/partners/CaCI.png';
 import forcen from '../../assets/partners/ForceN.webp';
 import afr from '../../assets/partners/afr.jpg';
+import mafally from '../../assets/gallery/student.jpeg';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -79,23 +80,23 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: t('home.testimonials.name1'),
+      name: 'Mafally THIAM',
       role: t('home.testimonials.role1'),
-      avatar: hero2,
+      avatar: mafally,
       text: t('home.testimonials.t1'),
     },
-    {
-      name: t('home.testimonials.name2'),
-      role: t('home.testimonials.role2'),
-      avatar: conference,
-      text: t('home.testimonials.t2'),
-    },
-    {
-      name: t('home.testimonials.name3'),
-      role: t('home.testimonials.role3'),
-      avatar: atelier,
-      text: t('home.testimonials.t3'),
-    },
+    // {
+    //   name: t('home.testimonials.name2'),
+    //   role: t('home.testimonials.role2'),
+    //   avatar: conference,
+    //   text: t('home.testimonials.t2'),
+    // },
+    // {
+    //   name: t('home.testimonials.name3'),
+    //   role: t('home.testimonials.role3'),
+    //   avatar: atelier,
+    //   text: t('home.testimonials.t3'),
+    // },
   ];
 
   const prevTestimonial = () => setTestimonialIndex((i) => (i - 1 + testimonials.length) % testimonials.length);
@@ -448,12 +449,12 @@ export default function Home() {
                   <div className="flex-shrink-0 mx-auto sm:mx-0">
                     <div
                       className="rounded-full overflow-hidden border-4"
-                      style={{ width: '110px', height: '110px', borderColor: '#1a5c38' }}
+                      style={{ width: '125px', height: '125px', borderColor: '#1a5c38' }}
                     >
                       <img
                         src={testimonials[testimonialIndex].avatar}
                         alt={testimonials[testimonialIndex].name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover  object-top"
                       />
                     </div>
                   </div>

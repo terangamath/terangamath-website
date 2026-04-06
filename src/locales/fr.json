@@ -99,9 +99,8 @@
     "testimonials": {
       "tag": "Ils témoignent",
       "title": "Ce qu'ils disent de nous",
-      "t1": "TerangaMath a complètement changé ma façon de voir les maths ! Les ateliers sont interactifs et amusants, j'adore la façon dont ils relient les maths à la vie quotidienne. Je me sens plus confiante et j'ai même commencé à me préparer pour des compétitions.",
-      "t2": "J'ai vu un changement remarquable chez mon élève depuis son entrée dans TerangaMath. L'approche accueillante et les activités concrètes ont suscité un amour des maths que je ne croyais pas possible à ce niveau.",
-      "t3": "TerangaMath offre une plateforme incroyable aux élèves pour explorer les maths au-delà de la salle de classe. Leurs méthodes innovantes et leur approche communautaire inspirent non seulement les élèves, mais aussi les éducateurs comme moi."
+      "t1": "J’ai eu l’opportunité de participer à un stage de préparation encadré par deux étudiants passionnés . Ce stage m’a permis de renforcer mes compétences, d’approfondir mes méthodes de travail et de gagner en rigueur. L’accompagnement personnalisé et l’ambiance stimulante ont été déterminants dans ma progression. À l’issue de cette expérience, j’ai eu la satisfaction d’obtenir une médaille de bronze.",
+      "role1": "1ere s1 Lynaque Sedhiou, laureat ofm 2026"
     },
     "blog": {
       "tag": "Actualité",
@@ -456,7 +455,11 @@
       "description": "TerangaMath œuvre pour rendre les mathématiques accessibles, concrètes et vivantes.",
       "events": {
         "title": "Événements scientifiques",
-        "text": "TerangaMath organise des événements ouverts aux élèves, enseignants et au grand public afin de promouvoir la culture mathématique."
+        "text": "TerangaMath organise des événements ouverts aux élèves, enseignants et au grand public afin de promouvoir la culture mathématique.",
+        "bullet1": "Conférences et tables rondes",
+        "bullet2": "Journées portes ouvertes scientifiques",
+        "bullet3": "Rencontres entre élèves, enseignants et chercheurs",
+        "bullet4": "Événements ouverts au grand public"
       },
       "expo": {
         "title": "Expositions scientifiques interactives",
@@ -476,7 +479,11 @@
       },
       "videos": {
         "title": "Vidéos & Webinaires",
-        "text": "TerangaMath développe des contenus numériques pour élargir l'accès aux ressources scientifiques."
+        "text": "TerangaMath développe des contenus numériques pour élargir l'accès aux ressources scientifiques.",
+        "bullet1": "Vidéos pédagogiques sur les concepts clés",
+        "bullet2": "Webinaires avec des chercheurs et enseignants",
+        "bullet3": "Contenu accessible à distance",
+        "bullet4": "Ressources gratuites et ouvertes à tous"
       },
       "mallette": {
         "title": "Mallette itinérante",
@@ -491,7 +498,32 @@
       "subtitle": "Que vous soyez étudiant, enseignant, parent ou passionné — il y a une place pour vous dans notre communauté.",
       "contact": "Nous contacter",
       "donate": "Faire un don"
-    }
+    },
+    "projets": {
+  "tag": "BIENTÔT",
+  "title": "Projets à venir",
+  "description": "Des initiatives en cours de préparation pour aller encore plus loin dans la promotion des mathématiques et des sciences.",
+  "badge": "À venir",
+  "immersion": {
+    "title": "Stage scientifique — Semaine Immersion Mathématique",
+    "text": "Pendant une semaine, des élèves seront regroupés dans un espace dédié à l'expérimentation et à la découverte mathématique.",
+    "bullet1": "Activités interactives et manipulations concrètes",
+    "bullet2": "Défis collaboratifs entre élèves",
+    "bullet3": "Exploration de concepts mathématiques par la pratique",
+    "bullet4": "Encadrement par des formateurs expérimentés"
+  },
+  "mallette": {
+    "title": "Mallette itinérante",
+    "text": "Une mini-exposition mobile qui circulera dans les établissements scolaires à travers le Sénégal.",
+    "bullet1": "Exposition portable et modulable",
+    "bullet2": "Déploiement dans les lycées et collèges",
+    "bullet3": "Jeux et manipulations mathématiques inclus",
+    "bullet4": "Objectif : toucher les zones rurales et périurbaines"
+  },
+  "cta_title": "Vous souhaitez soutenir ces projets ?",
+  "cta_text": "Ces projets sont en phase de préparation. Votre soutien — financier, logistique ou humain — peut faire la différence.",
+  "cta_button": "Nous contacter"
+}
   },
   "gallery": {
     "hero": {
