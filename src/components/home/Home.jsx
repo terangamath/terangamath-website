@@ -6,8 +6,6 @@ import atelier from '../../assets/others/atelier.avif';
 import team from '../../assets/others/OMF_math_Senegal-1.avif';
 import instapost from '../../assets/others/Instagram-post-16.avif';
 import conference from '../../assets/others/sans-titre-6911-scaled.avif';
-import hero1 from '../../assets/others/composite-image-of-maths.avif';
-import hero2 from '../../assets/others/sans-titre-6950-scaled.avif';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import { POSTS } from '../blog/Blog';
@@ -18,6 +16,11 @@ import caci from '../../assets/partners/CaCI.png';
 import forcen from '../../assets/partners/ForceN.webp';
 import afr from '../../assets/partners/afr.jpg';
 import mafally from '../../assets/gallery/student.jpeg';
+import hero1 from '../../assets/hero/hero1.jpg';
+import hero2 from '../../assets/hero/hero2.jpg';
+import hero3 from '../../assets/hero/hero3.jpg';
+import hero4 from '../../assets/hero/hero4.jpg';
+import hero5 from '../../assets/hero/hero5.jpg';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -187,7 +190,7 @@ export default function Home() {
                 <div className="absolute left-0 top-0 bottom-0 w-10 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, #ede8db, transparent)' }} />
                 <div className="absolute right-0 top-0 bottom-0 w-10 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, #ede8db, transparent)' }} />
                 <div className="marquee-photos py-3 px-2" style={{ gap: '1rem' }}>
-                  {[...[conference, hero1, hero2, atelier, instapost], ...[conference, hero1, hero2, atelier, instapost]].map((img, i) => (
+                  {[...[hero5, hero1, hero2, hero3, hero4], ...[conference, hero1, hero2, atelier, instapost]].map((img, i) => (
                     <div key={i} className="bg-white shadow-md rounded-sm flex-shrink-0" style={{ width: '150px', padding: '6px 6px 20px 6px', transform: `rotate(${[-3,4,-2,5,-4,-3,4,-2,5,-4][i%10]}deg)`, marginTop: [0,10,4,12,2,0,10,4,12,2][i%10] }}>
                       <div className="w-full overflow-hidden" style={{ aspectRatio: '4/3' }}>
                         <img src={img} alt="" className="w-full h-full object-cover" draggable="false" />
@@ -201,11 +204,11 @@ export default function Home() {
             {/* Desktop scatter */}
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="hidden lg:block relative h-[500px] xl:h-[560px] w-full">
               {[
-                { src: conference, alt: 'Conference', s: { width:'52%', top:'1%',    left:'0%',  zIndex:2 }, i: { opacity:0, y:-30, rotate:-12 },    a: { opacity:1, y:0,  rotate:-8  }, h: { scale:1.07, rotate:-5  }, d:0.25 },
+                { src: hero2, alt: 'Conference', s: { width:'52%', top:'1%',    left:'0%',  zIndex:2 }, i: { opacity:0, y:-30, rotate:-12 },    a: { opacity:1, y:0,  rotate:-8  }, h: { scale:1.07, rotate:-5  }, d:0.25 },
                 { src: hero1,      alt: 'Maths',      s: { width:'42%', top:'0%',    right:'0%', zIndex:3 }, i: { opacity:0, x:40,  rotate:18  },    a: { opacity:1, x:0,  rotate:12  }, h: { scale:1.07, rotate:8   }, d:0.38 },
                 { src: hero2,      alt: 'Olympiades', s: { width:'54%', top:'26%',   left:'22%', zIndex:6 }, i: { opacity:0, scale:0.8, rotate:5 },  a: { opacity:1, scale:1, rotate:-3 }, h: { scale:1.08, rotate:0  }, d:0.5  },
-                { src: atelier,    alt: 'Atelier',    s: { width:'45%', bottom:'0%', left:'3%',  zIndex:4 }, i: { opacity:0, y:40,  rotate:14  },    a: { opacity:1, y:0,  rotate:9   }, h: { scale:1.07, rotate:12  }, d:0.62 },
-                { src: instapost,  alt: 'Team',       s: { width:'43%', bottom:'3%', right:'1%', zIndex:5 }, i: { opacity:0, x:30,  rotate:-16 },    a: { opacity:1, x:0,  rotate:-11 }, h: { scale:1.07, rotate:-8  }, d:0.74 },
+                { src: hero3,    alt: 'Atelier',    s: { width:'45%', bottom:'0%', left:'3%',  zIndex:4 }, i: { opacity:0, y:40,  rotate:14  },    a: { opacity:1, y:0,  rotate:9   }, h: { scale:1.07, rotate:12  }, d:0.62 },
+                { src: hero5,  alt: 'Team',       s: { width:'43%', bottom:'3%', right:'1%', zIndex:5 }, i: { opacity:0, x:30,  rotate:-16 },    a: { opacity:1, x:0,  rotate:-11 }, h: { scale:1.07, rotate:-8  }, d:0.74 },
               ].map((c, idx) => (
                 <motion.div key={idx} initial={c.i} animate={c.a} transition={{ duration:0.6, delay:c.d, type:'spring', stiffness:110 }} whileHover={{ ...c.h, zIndex:20, transition:{duration:0.2} }} className="absolute bg-white p-2 pb-8 shadow-xl rounded-sm cursor-pointer" style={c.s}>
                   <div className="aspect-[4/3] overflow-hidden">
