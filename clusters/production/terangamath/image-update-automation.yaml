@@ -1,0 +1,28 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageUpdateAutomation
+metadata:
+  name: terangamath
+  namespace: flux-system
+spec:
+  interval: 2m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        name: Flux Bot
+        email: flux@terangamath.org
+      messageTemplate: |
+        chore(deploy): update TerangaMath image to {{.NewImage}}
+        
+        Updated image tag from {{.OldImage}} to {{.NewImage}}
+    push:
+      branch: main
+  update:
+    path: ./clusters/production
+    strategy: Setters
