@@ -24,8 +24,8 @@ spec:
           type: RuntimeDefault
       containers:
         - name: app
-          image: ghcr.io/terangamath/terangamath-website:latest
-          imagePullPolicy: Always
+          image: ghcr.io/terangamath/terangamath-website:1.0.0 # {"$imagepolicy": "flux-system:terangamath"}
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               protocol: TCP

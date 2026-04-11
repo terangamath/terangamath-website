@@ -1,0 +1,11 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: terangamath
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: terangamath
+  policy:
+    semver:
+      range: 1.0.x

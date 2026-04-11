@@ -5,12 +5,12 @@ metadata:
   namespace: terangamath-prod
   annotations:
     traefik.ingress.kubernetes.io/router.tls.certresolver: letsencrypt
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   ingressClassName: traefik
   tls:
     - hosts:
         - www.terangamath.org
-      secretName: terangamath-tls
   rules:
     - host: www.terangamath.org
       http:
