@@ -170,7 +170,7 @@ Aucun Node.js, aucun code source, aucun `node_modules` en production.
 
 ## GitOps avec Flux CD
 
-Flux CD tourne sur le cluster et surveille GHCR toutes les **5 minutes**.
+Flux CD tourne sur le cluster et surveille GHCR toutes les **15 minutes**.
 
 Dès qu'une nouvelle image correspondant à la policy `1.0.x` est détectée, Flux met à jour automatiquement le déploiement — sans intervention manuelle.
 
@@ -181,7 +181,7 @@ git tag v1.0.1 && git push origin v1.0.1
 GitHub Actions builde et pushe ghcr.io/.../terangamath-website:1.0.1
         │
         ▼
-Flux CD détecte 1.0.1 (dans les 5 minutes)
+Flux CD détecte 1.0.1 (dans les 15 minutes)
         │
         ▼
 Déploiement automatique sur le cluster

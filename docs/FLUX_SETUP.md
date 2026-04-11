@@ -4,40 +4,29 @@ This document provides a complete turnkey solution for setting up Flux CD with a
 
 ## Architecture Overview
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      GitHub Repository                        │
-│         terangamath/terangamath-website                      │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────┐   │
-│  │   App Code   │  │  K8s Manifests│  │  Flux Config     │   │
-│  └──────────────┘  └──────────────┘  └──────────────────┘   │
-└────────────────────┬──────────────────────────────────────────┘
-                     │ Git polling (1-2 min)
-                     ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    RKE2 Cluster (On-Prem)                    │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │                   Flux System                         │ │
-│  │  ┌─────────────────┐  ┌─────────────────────────────┐ │ │
-│  │  │ GitRepository   │  │  Kustomization              │ │ │
-│  │  │ (watches repo)  │  │  (applies manifests)        │ │ │
-│  │  └─────────────────┘  └─────────────────────────────┘ │ │
-│  │  ┌─────────────────┐  ┌─────────────────────────────┐ │ │
-│  │  │ ImageRepository │  │  ImagePolicy                │ │ │
-│  │  │ (polls GHCR)    │  │  (semver: 1.0.x)           │ │ │
-│  │  └─────────────────┘  └─────────────────────────────┘ │ │
-│  │  ┌──────────────────────────────────────────────┐   │ │
-│  │  │ ImageUpdateAutomation                        │   │ │
-│  │  │ (commits new image tags to Git)              │   │ │
-│  │  └──────────────────────────────────────────────┘   │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                         │                                    │
-│                         ▼                                    │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │         terangamath-prod Namespace                     │ │
-│  │              www.terangamath.org                      │ │
-│  └────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    subgraph GH["GitHub Repository<br/>terangamath/terangamath-website"]
+        A["App Code"]
+        B["K8s Manifests<br/>(clusters/production/)"]
+        C["Flux Config<br/>(ImageRepository, Policy, Automation)"]
+    end
+
+    GH -- "Git polling (1-2 min)" --> RKE
+
+    subgraph RKE["RKE2 Cluster (On-Prem)"]
+        subgraph FS["flux-system Namespace"]
+            GR["GitRepository<br/>(watches repo)"]
+            KS["Kustomization<br/>(applies manifests)"]
+            IR["ImageRepository<br/>(polls GHCR every 15 min)"]
+            IP["ImagePolicy<br/>(semver: 1.0.x)"]
+            IU["ImageUpdateAutomation<br/>(commits new tags to Git)"]
+        end
+        subgraph TP["terangamath-prod Namespace"]
+            DP["Deployment<br/>www.terangamath.org"]
+        end
+        FS --> TP
+    end
 ```
 
 ## Prerequisites
@@ -117,7 +106,6 @@ Flux image automation works with semver tags. When you want to release:
 
 ```bash
 # Tag and push to trigger image build
-
 git tag v1.0.0
 git push origin v1.0.0
 ```
@@ -125,7 +113,7 @@ git push origin v1.0.0
 The GitHub workflow will automatically:
 1. Build the image
 2. Push tag `1.0.0` to GHCR
-3. Flux will detect it (within 5 minutes) and update the deployment
+3. Flux will detect it (within 15 minutes) and update the deployment
 
 ## File Structure
 
@@ -142,15 +130,15 @@ terangamath-website/
 │       │   ├── gotk-sync.yaml
 │       │   └── kustomization.yaml
 │       └── terangamath/
-│           ├── kustomization.yaml  # App kustomization
+│           ├── kustomization.yaml  # App kustomization (no namespace override)
 │           ├── namespace.yaml
 │           ├── deployment.yaml     # With Flux image marker
 │           ├── service.yaml
 │           ├── ingress.yaml
 │           ├── networkpolicy.yaml
-│           ├── image-repository.yaml
-│           ├── image-policy.yaml
-│           └── image-update-automation.yaml
+│           ├── image-repository.yaml   # namespace: flux-system
+│           ├── image-policy.yaml       # namespace: flux-system
+│           └── image-update-automation.yaml  # namespace: flux-system
 ├── src/                           # React application
 ├── public/
 ├── Dockerfile
@@ -161,23 +149,40 @@ terangamath-website/
 
 ### Automatic Deployment Flow
 
-1. **Developer pushes Git tag** `v1.0.1`
-2. **GitHub Actions** builds image and pushes `ghcr.io/terangamath/terangamath-website:1.0.1`
-3. **ImageRepository** controller (polls every 5 min) sees new tag
-4. **ImagePolicy** controller evaluates against semver range `1.0.x`
-5. **ImageUpdateAutomation** controller commits new image tag to Git
-6. **GitRepository** controller sees commit (polls every 1 min)
-7. **Kustomization** controller applies updated deployment
-8. **Kubernetes** performs rolling update with new image
+```mermaid
+sequenceDiagram
+    participant Dev as Developer
+    participant GH as GitHub
+    participant GA as GitHub Actions
+    participant GHCR as GHCR
+    participant IR as ImageRepository
+    participant IP as ImagePolicy
+    participant IU as ImageUpdateAutomation
+    participant GR as GitRepository
+    participant KS as Kustomization
+    participant K8s as Kubernetes
+
+    Dev->>GH: git tag v1.0.1
+    GH->>GA: Trigger workflow
+    GA->>GHCR: Push image with tags 1.0.1, 1.0, 1, sha-xxx
+    IR->>GHCR: Scan tags (every 15 min)
+    IR->>IP: Available tags: [1.0.0, 1.0.1, sha-xxx]
+    IP->>IU: Latest matching 1.0.x → 1.0.1
+    IU->>GH: Commit deployment.yaml update
+    GR->>GH: Detect new commit (every 1 min)
+    GR->>KS: Sync manifests
+    KS->>K8s: Apply deployment
+    K8s->>K8s: Rolling update to v1.0.1
+```
 
 ### Typical Lead Times
 
 | Step | Max Delay |
 |------|-----------|
-| Image push → ImageRepository scan | 5 minutes |
+| Image push → ImageRepository scan | 15 minutes |
 | Image detected → Git commit | 2 minutes |
 | Git commit → Cluster apply | 1 minute |
-| **Total worst case** | **~8 minutes** |
+| **Total worst case** | **~18 minutes** |
 
 With webhook (optional): near-instant notification
 
@@ -250,6 +255,16 @@ flux reconcile image update terangamath -n flux-system
 3. **Read-only GHCR:** ImageRepository only needs `read:packages` scope if private
 4. **Git commits:** All changes are tracked in Git history
 5. **No manual kubectl:** Flux manages deployment; manual kubectl discouraged
+
+## Important Notes
+
+### Kustomization Namespace Handling
+
+The `clusters/production/terangamath/kustomization.yaml` deliberately does **not** include a `namespace:` override. This is because:
+
+- App resources (Deployment, Service, Ingress, NetworkPolicy) have `namespace: terangamath-prod` set explicitly in their YAML
+- Flux CRDs (ImageRepository, ImagePolicy, ImageUpdateAutomation) have `namespace: flux-system` set explicitly in their YAML
+- A kustomization-level `namespace:` override would incorrectly move Flux CRDs to `terangamath-prod`, breaking the automation
 
 ## Documentation Links
 

@@ -48,10 +48,10 @@ This `k8s/` folder is kept for reference during the transition period. Once Flux
 ### Setup Instructions
 
 See:
-- `FLUX_SETUP.md` - Complete setup documentation
-- `FLUX_TURNKEY_SUMMARY.md` - Quick reference
-- `FLUX_DOCUMENTATION.md` - Links to Flux docs
+- `docs/FLUX_SETUP.md` - Complete setup documentation
+- `docs/FLUX_TURNKEY_SUMMARY.md` - Quick reference
+- `docs/FLUX_DOCUMENTATION.md` - Links to Flux docs
 
 ### Questions?
 
-Check the main documentation files in the repository root.
+Check the documentation files in the `docs/` directory.

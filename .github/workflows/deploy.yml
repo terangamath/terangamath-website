@@ -69,6 +69,7 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     outputs:
       new_tag: ${{ steps.bump.outputs.new_tag }}
+      new_version: ${{ steps.bump.outputs.new_version }}
 
     steps:
       - name: Checkout du code
@@ -92,9 +93,13 @@ jobs:
             NEW_TAG="v${MAJOR}.${MINOR}.$((PATCH + 1))"
           fi
 
+          # Extraire la version sans le préfixe 'v'
+          NEW_VERSION="${NEW_TAG#v}"
+
           echo "Dernier tag : ${LAST_TAG:-aucun}"
           echo "Nouveau tag : $NEW_TAG"
           echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
 
           # Créer et pousser le tag
           git config user.name "github-actions[bot]"
@@ -128,8 +133,37 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extraire les métadonnées Docker
-        id: meta
+      # When triggered by main push (auto-tag), use the auto-tag version.
+      # When triggered by a tag push, use semver from the git ref.
+      # When triggered by PR, only build without pushing (no semver tags).
+      - name: Determine semver tags from auto-tag
+        if: needs.auto-tag.result == 'success'
+        id: semver-tags
+        run: |
+          VERSION="${{ needs.auto-tag.outputs.new_version }}"
+          MAJOR=$(echo "$VERSION" | cut -d. -f1)
+          MINOR=$(echo "$VERSION" | cut -d. -f2)
+          PATCH=$(echo "$VERSION" | cut -d. -f3)
+          echo "full=${VERSION}" >> $GITHUB_OUTPUT
+          echo "major_minor=${MAJOR}.${MINOR}" >> $GITHUB_OUTPUT
+          echo "major=${MAJOR}" >> $GITHUB_OUTPUT
+
+      - name: Extraire les métadonnées Docker (auto-tag)
+        if: needs.auto-tag.result == 'success'
+        id: meta-auto
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=raw,value=${{ needs.auto-tag.outputs.new_version }}
+            type=raw,value=${{ steps.semver-tags.outputs.major_minor }}
+            type=raw,value=${{ steps.semver-tags.outputs.major }}
+            type=raw,value=latest
+            type=sha,prefix=sha-,format=short
+
+      - name: Extraire les métadonnées Docker (tag push)
+        if: needs.auto-tag.result == 'skipped'
+        id: meta-tag
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
@@ -140,23 +174,40 @@ jobs:
             type=sha,prefix=sha-,format=short
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
 
-      - name: Build et push de l'image
+      - name: Build et push de l'image (auto-tag)
+        if: needs.auto-tag.result == 'success'
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta-auto.outputs.tags }}
+          labels: ${{ steps.meta-auto.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build et push de l'image (tag push)
+        if: needs.auto-tag.result == 'skipped'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta-tag.outputs.tags }}
+          labels: ${{ steps.meta-tag.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
       - name: Résumé du déploiement
+        if: always()
         run: |
           echo "### Image Docker publiée" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Image**: \`${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}\`" >> $GITHUB_STEP_SUMMARY
           echo "**Tags**:" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.meta.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ needs.auto-tag.result }}" = "success" ]; then
+            echo "${{ steps.meta-auto.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "${{ steps.meta-tag.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
+          fi
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
           echo "**Commit**: \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
