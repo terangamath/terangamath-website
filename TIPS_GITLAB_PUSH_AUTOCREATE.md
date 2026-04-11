@@ -15,17 +15,17 @@ Depuis GitLab 10.5 (février 2018), un simple `git push` crée automatiquement l
 git push --set-upstream git@gitlab.com:NAMESPACE/NOM-DU-PROJET.git BRANCHE
 
 # Exemple concret
-git push --set-upstream git@gitlab.com:pivert/mon-projet.git main
+git push --set-upstream git@gitlab.com:NAMESPACE/mon-projet.git main
 ```
 
 ### Résultat
 ```
-remote: The private project pivert/mon-projet was successfully created.
+remote: The private project NAMESPACE/mon-projet was successfully created.
 remote:
 remote: To view the project, visit:
-remote:   https://gitlab.com/pivert/mon-projet
+remote:   https://gitlab.com/NAMESPACE/mon-projet
 
-To gitlab.com:pivert/mon-projet.git
+To gitlab.com:NAMESPACE/mon-projet.git
  * [new branch]      main -> main
 branch 'main' set up to track 'gitlab/main'.
 ```

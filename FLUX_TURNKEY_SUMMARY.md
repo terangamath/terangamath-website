@@ -26,7 +26,7 @@ clusters/
 ### Key Changes
 
 #### 1. GitHub Workflow (.github/workflows/deploy.yml)
-- ✅ Fixed image name: `terangamath/terangamath-website` (was `diarrasokhna`)
+- ✅ Fixed image name: `terangamath/terangamath-website`
 - ✅ Added semver tagging on Git tag push (v1.0.0 → image tag 1.0.0)
 - ✅ Conditional latest tag (only on main branch)
 

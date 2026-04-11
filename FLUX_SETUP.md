@@ -59,14 +59,10 @@ This document provides a complete turnkey solution for setting up Flux CD with a
 
 ## Step 1: Fix Image Registry Target
 
-Before proceeding, update `.github/workflows/deploy.yml` to push to the correct GHCR:
+Before proceeding, update `.github/workflows/deploy.yml` to push to the correct GHCR.
 
-**Change line 15:**
+Ensure the `IMAGE_NAME` in the workflow is set to:
 ```yaml
-# FROM:
-IMAGE_NAME: diarrasokhna/terangamath-website
-
-# TO:
 IMAGE_NAME: terangamath/terangamath-website
 ```
 
@@ -75,7 +71,7 @@ IMAGE_NAME: terangamath/terangamath-website
 Run this command from your local machine with kubectl pointed to your RKE2 cluster:
 
 ```bash
-export GITHUB_TOKEN=<your-fine-grained-pat>
+export GITHUB_TOKEN=<PAT>
 
 flux bootstrap github \
   --owner=terangamath \
