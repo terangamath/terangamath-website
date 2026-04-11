@@ -35,6 +35,8 @@ jobs:
     steps:
       - name: Checkout du code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Récupère tous les tags pour semver tagging
 
       - name: Setup Node.js 22
         uses: actions/setup-node@v4
