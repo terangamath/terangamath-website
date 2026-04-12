@@ -42,7 +42,7 @@ Developer pushes Git tag v1.0.1
     ↓
 GitHub Actions builds image → ghcr.io/terangamath/terangamath-website:1.0.1
     ↓
-ImageRepository (polls every 5min) sees new tag
+ImageRepository (polls every 15min) sees new tag
     ↓
 ImagePolicy checks semver range 1.0.x → matches 1.0.1
     ↓
