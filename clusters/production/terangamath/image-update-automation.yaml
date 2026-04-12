@@ -18,9 +18,10 @@ spec:
         name: Flux Bot
         email: flux@terangamath.org
       messageTemplate: |
-        chore(deploy): update TerangaMath image to {{.NewImage}}
-        
-        Updated image tag from {{.OldImage}} to {{.NewImage}}
+        chore(deploy): update TerangaMath image
+        {{- range $_, $change := .Changed.Changes }}
+        {{ .OldValue }} -> {{ .NewValue }}
+        {{- end }}
     push:
       branch: main
   update:
