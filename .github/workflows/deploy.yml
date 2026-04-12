@@ -116,7 +116,7 @@ jobs:
     name: Build & Push Docker image
     runs-on: ubuntu-latest
     needs: [build-app, auto-tag]
-    if: always() && needs.build-app.result == 'success' && (needs.auto-tag.result == 'success' || needs.auto-tag.result == 'skipped')
+    if: always() && needs.build-app.result == 'success' && (needs.auto-tag.result == 'success' || (needs.auto-tag.result == 'skipped' && github.event_name != 'pull_request'))
 
     steps:
       - name: Checkout du code
