@@ -343,9 +343,6 @@ export default function Home() {
             <a href="#actions" className="font-body px-6 py-3 rounded-lg font-semibold text-[15px] text-white shadow-md hover:opacity-90 transition-all" style={{ backgroundColor:'#1a5c38' }}>
               {t('home.stats.cta_actions')}
             </a>
-            <a href="https://www.helloasso.com/associations/terangamath/formulaires/1" className="font-body px-6 py-3 rounded-lg font-semibold text-[15px] border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-all shadow-sm">
-              {t('home.stats.cta_don')}
-            </a>
           </motion.div>
         </div>
       </section>
