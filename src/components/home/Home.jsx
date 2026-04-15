@@ -402,12 +402,6 @@ export default function Home() {
                   ))}
                 </motion.div>
 
-                <motion.div initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }} transition={{ duration:0.5, delay:0.48 }}>
-                  <a href="#" className="font-body inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white shadow-sm hover:opacity-90 transition-all" style={{ backgroundColor:'#1a5c38' }}>
-                    {t('home.inclusion.cta')}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                  </a>
-                </motion.div>
               </div>
             </div>
           </motion.div>
