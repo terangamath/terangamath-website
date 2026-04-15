@@ -75,10 +75,6 @@ export default function Footer() {
             <a href="mailto:contact@terangamath.org" className="hover:text-white transition-colors">
               contact@terangamath.org
             </a>
-            <span className="mx-2 opacity-40">|</span>
-            <a href="tel:+221551794567" className="hover:text-white transition-colors">
-              +33 760 83 32 30
-            </a>
           </div>
           <p className="font-body text-xs text-white/50">
             © {new Date().getFullYear()} TerangaMath — {t('footer.rights')}
