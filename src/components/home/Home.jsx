@@ -178,8 +178,8 @@ export default function Home() {
                 <a href="#actions" className="font-body px-6 py-3 rounded-lg font-semibold text-[15px] text-white shadow-md hover:shadow-lg transition-all hover:opacity-90" style={{ backgroundColor: '#1a5c38' }}>
                   {t('home.hero.cta_actions')}
                 </a>
-                <a href="https://www.helloasso.com/associations/terangamath/formulaires/1" className="font-body px-6 py-3 rounded-lg font-semibold text-[15px] border-2 text-gray-800 bg-white hover:bg-gray-50 transition-all shadow-sm" style={{ borderColor: '#1a5c38' }}>
-                  {t('home.hero.cta_support')}
+                <a href="/events" className="font-body px-6 py-3 rounded-lg font-semibold text-[15px] border-2 text-gray-800 bg-white hover:bg-gray-50 transition-all shadow-sm" style={{ borderColor: '#1a5c38' }}>
+                  Actualités
                 </a>
               </motion.div>
             </motion.div>
