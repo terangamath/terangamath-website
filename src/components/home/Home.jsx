@@ -21,6 +21,8 @@ import hero2 from '../../assets/hero/hero2.jpg';
 import hero3 from '../../assets/hero/hero3.jpg';
 import hero4 from '../../assets/hero/hero4.jpg';
 import hero5 from '../../assets/hero/hero5.jpg';
+import hero6 from '../../assets/hero/hero6.jpg';
+import hero7 from '../../assets/hero/hero7.jpg';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -49,7 +51,7 @@ export default function Home() {
     {
       id: 'vulgarisation',
       href: '/actions#vulgarisation',
-      src: instapost,
+      src: hero7,
       title: t('home.pillars.vulgarisation.title'),
       desc: t('home.pillars.vulgarisation.desc'),
       cta: t('home.pillars.vulgarisation.cta'),
@@ -206,7 +208,7 @@ export default function Home() {
               {[
                 { src: hero2, alt: 'Conference', s: { width:'52%', top:'1%',    left:'0%',  zIndex:2 }, i: { opacity:0, y:-30, rotate:-12 },    a: { opacity:1, y:0,  rotate:-8  }, h: { scale:1.07, rotate:-5  }, d:0.25 },
                 { src: hero1,      alt: 'Maths',      s: { width:'42%', top:'0%',    right:'0%', zIndex:3 }, i: { opacity:0, x:40,  rotate:18  },    a: { opacity:1, x:0,  rotate:12  }, h: { scale:1.07, rotate:8   }, d:0.38 },
-                { src: hero2,      alt: 'Olympiades', s: { width:'54%', top:'26%',   left:'22%', zIndex:6 }, i: { opacity:0, scale:0.8, rotate:5 },  a: { opacity:1, scale:1, rotate:-3 }, h: { scale:1.08, rotate:0  }, d:0.5  },
+                { src: hero4,      alt: 'Olympiades', s: { width:'54%', top:'26%',   left:'22%', zIndex:6 }, i: { opacity:0, scale:0.8, rotate:5 },  a: { opacity:1, scale:1, rotate:-3 }, h: { scale:1.08, rotate:0  }, d:0.5  },
                 { src: hero3,    alt: 'Atelier',    s: { width:'45%', bottom:'0%', left:'3%',  zIndex:4 }, i: { opacity:0, y:40,  rotate:14  },    a: { opacity:1, y:0,  rotate:9   }, h: { scale:1.07, rotate:12  }, d:0.62 },
                 { src: hero5,  alt: 'Team',       s: { width:'43%', bottom:'3%', right:'1%', zIndex:5 }, i: { opacity:0, x:30,  rotate:-16 },    a: { opacity:1, x:0,  rotate:-11 }, h: { scale:1.07, rotate:-8  }, d:0.74 },
               ].map((c, idx) => (
@@ -362,7 +364,7 @@ export default function Home() {
           <motion.div initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.7, delay:0.1 }} className="rounded-2xl overflow-hidden shadow-xl bg-white">
             <div className="grid lg:grid-cols-5">
               <div className="lg:col-span-2 relative overflow-hidden" style={{ minHeight:'280px' }}>
-                <img src={atelier} alt="Inclusion" className="absolute inset-0 w-full h-full object-cover" />
+                <img src={hero6} alt="Inclusion" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="lg:hidden absolute inset-0" style={{ background:'linear-gradient(to bottom, transparent 55%, #fff 100%)' }} />
                 <motion.div initial={{ opacity:0, scale:0.85 }} whileInView={{ opacity:1, scale:1 }} viewport={{ once:true }} transition={{ duration:0.5, delay:0.45 }} className="absolute bottom-5 left-5 flex items-center gap-2.5 rounded-xl px-4 py-2.5 shadow-lg" style={{ backgroundColor:'#1a5c38' }}>
                   <svg className="w-5 h-5 text-white flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4a6 6 0 1 1 0 12A6 6 0 0 1 12 4zm0-2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-1 9v7h2v-7h3l-4-4-4 4h3z"/></svg>
